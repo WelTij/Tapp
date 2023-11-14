@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <link rel="stylesheet" type="text/css" href="login.page.scss">
+  <ion-toolbar>
+    <ion-title size="large" color="light" style="background-color: #c8f396;">TAREAS DE LA UT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-text-center ion-align-items-center" style="background: #dcfad1;">
+  <div id="container">
+    <strong style="color: #333;">LISTA DE TAREAS</strong>
+    <p style="color: #666;">Bienvenido</p>
+
+    <ion-list style="background-color: #f5f111; padding: 10px; border-radius: 10px;">
+      <ion-item>
+        <ion-input [(ngModel)]="usuario" label="Usuario" labelPlacement="floating" placeholder="Ingrese su usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="contrasenia" label="Contraseña" labelPlacement="floating" placeholder="Ingresa tu contraseña"></ion-input>
+      </ion-item>
+      <ion-button (click)="validarCampos()" expand="block" shape="round" class="custom-button" style="background-color: #fdfdfd; color: #fffb04;">
+        Acceder
+      </ion-button>
+    </ion-list>
+
+    <p *ngIf="mensajeError" class="error-message ion-text-center" style="color: #ff0000;">{{ mensajeError }}</p>
+  </div>
+</ion-content>

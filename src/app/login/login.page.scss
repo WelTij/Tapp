@@ -1,0 +1,74 @@
+/* Estilo para el encabezado */
+ion-header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: #fff; /* Texto en color blanco */
+  }
+  
+  .toolbar-style {
+    background-color: #4CAF50;
+    border-bottom: 2px solid #388E3C; /* Línea inferior más oscura */
+  }
+  
+  .title-style {
+    font-size: 24px;
+    color: #388E3C; /* Color de título más oscuro */
+  }
+  
+  .content-style {
+    background-color: #F5F5F5; /* Color de fondo gris claro */
+  }
+  
+  .container-style {
+    padding: 20px;
+  }
+  
+  .list-title {
+    font-size: 18px;
+    color: #333; /* Color de texto natural */
+  }
+  
+  .welcome-text {
+    font-size: 16px;
+    color: #555; /* Color de texto natural ligeramente más oscuro */
+  }
+  
+  .card-style {
+    background-color: #fff; /* Color de fondo blanco */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .button-style {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .button-style:hover {
+    background-color: #388E3C; /* Color de botón más oscuro al pasar el cursor */
+  }
+  
+  .error-message {
+    color: #E57373; /* Color de texto rojo para mensajes de error */
+  }
+
+  /* En tu archivo CSS o en el estilo del componente */
+  .custom-button {
+    background-color: #69da1d; /* Cambia el color de fondo como desees */
+    color: #fff; /* Cambia el color del texto como desees */
+    border: none;
+    border-radius: 10px; /* Ajusta el radio del borde como desees */
+    font-size: 16px;
+    padding: 10px 20px; /* Ajusta el espaciado como desees */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima (opcional) */
+  }
+  
+  .custom-button:focus,
+  .custom-button:active {
+    background-color: #179e17; /* Cambia el color de fondo cuando se enfoca o está activo */
+  }
+  }
