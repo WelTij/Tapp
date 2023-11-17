@@ -1,0 +1,30 @@
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm cache clean --force
+    npm install -g ionic
+    npm install
+  displayName: 'Install Ionic and Dependencies'
+
+- script: 'ionic build'
+  displayName: 'Build Ionic App'
+
+- task: ArchiveFiles@2
+  displayName: 'archive ionic-app'
+  inputs:
+    rootFolderOrFile: 'www'
+    includeRootFolder: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
